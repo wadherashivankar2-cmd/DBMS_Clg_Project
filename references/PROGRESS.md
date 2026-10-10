@@ -16,8 +16,8 @@ Status values: `NOT STARTED`, `IN PROGRESS`, `BLOCKED`, `DONE`.
 | **Step 3** | Database schema (migrations) | **DONE** | b5a1060 | PASS: `npm run db:up`, `npm run db:reset`, and `psql \dt` all 41 tables created cleanly | None (balance trigger and allowed transitions implemented) | Step 4 |
 | **Step 4** | Seed data | **DONE** | bb6c8cc | PASS: `npm run db:reset` cleanly runs migrations & seed; counts verified (4 roles, 7 categories, 6 users, 20 assets, 3 bookings) | None | Step 5 |
 | **Step 5** | Schema tests | **DONE** | 8f65a1e | PASS: `npm run db:test` prints all 12 tests passing | None | Step 6 |
-| **Step 6** | API and web scaffolds | NOT STARTED | - | - | - | Step 7 |
-| **Step 7** | Documentation and hand-off | NOT STARTED | - | - | - | Phase 2 |
+| **Step 6** | API and web scaffolds | **DONE** | 8740e7f | PASS: Health check, Swagger docs, dev auth, RolesGuard, web cluster dashboard | None | Step 7 |
+| **Step 7** | Documentation and hand-off | **DONE** | HEAD | PASS: ARCHITECTURE.md, DATABASE.md, HANDOFF.md, README.md, test pipeline | None | Phase 2 |
 
 ---
 
