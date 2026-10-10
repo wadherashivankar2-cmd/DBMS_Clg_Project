@@ -1,0 +1,21 @@
+{
+  "name": "app-root",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "db:up": "docker compose up -d db && node -e \"console.log('Database container starting...')\"",
+    "db:migrate": "tsx db/migrate.ts",
+    "db:seed": "tsx db/seed/seed.ts",
+    "db:reset": "tsx db/reset.ts",
+    "db:test": "node --test --import tsx db/tests/**/*.test.ts",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
